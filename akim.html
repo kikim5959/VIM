@@ -216,12 +216,47 @@
                                                                                          
                                              
 
+                                        
+                                         <!-- 9eme paragraphe -->
+                                           
+                                           
+                                           <h2>Rechercher et remplacer</h2>
 
 
+<p>/motif
+    recherche motif en allant vers la fin du document
+?motif
+    recherche motif en allant vers le début du document
+n
+    répète la dernière recherche (next, suivant)
+N
+    retourne au résultat de la précédente recherche effectuée
+//[RET]
+    répète la dernière recherche
+:x,y s/motif/motif2/g
+    recherche le motif, en allant de la ligne numérotée x à la ligne y, et le remplace par motif2
+:g/motif/s//motif2/g
+    recherche dans tous les fichiers le motif et la remplace par motif2 (global)
+:g/motif/s//motif2/gc
+    idem, mais demande une confirmation avant de remplacer
+</p>
 
 
+                                       <!-- 10eme paragraphe -->
 
 
+                                        <h2>Rafraîchir l'affichage</h2>
+
+<p>C'était très utile avec les anciens terminaux et les liaisons réseau erratiques provoquant des problèmes d'affichage. Cela ne l'est guère plus.
+
+[CTRL]l
+    (control-L) rafraîchit l'affichage
+%[RET]
+    rafraîchit l'affichage et place le curseur en haut
+%
+    rafraîchit l'affichage et place le curseur au milieu
+%-
+    rafraîchit l'affichage et place le curseur en bas</p>
 
 
     </body>
