@@ -3,69 +3,69 @@
 <html>
 
     <head>
-
+<link rel="stylesheet" href="style.css"/>
         <!-- En-tête de la page -->
 
 
  <meta charset="utf-8" />
 
-        <title>Bienvenue Je suis Vim</title>
+        <title>Bienvenue Je suis Vim 7</title>
 
 <a href="https://fr.wikipedia.org/wiki/Vim">Wikipedia Vim</a>
-       
+
 
     </head>
 
 
         <!-- FIN En-tête de la page -->
-        
-        
+
+
 
      <body>
-     <!-- Corps de la page -->    
+     <!-- Corps de la page -->
 
 
 
-     
-            
-            
+
+
+
      <h1>VIM</h1>
-     
 
-    
+
+
                <!-- 1er paragraphe -->
-        
-        
+
+
         <h2>Sauvegarder un fichier - quitter vi</h2>
 
        <ul>
 
-    <li>:w
-    sauvegarde le contenu du fichier (l'enregistrer), penser à write</li>   
+    <li> <strong>:w
+    sauvegarde le contenu du fichier (l'enregistrer), penser à write</li>
     <li>:x
-    sauvegarde puis quitte vi (exit)</li>
+    sauvegarde puis quitte vi (exit)</strong> </li>
 
-    <li>:wq
+    <li><strong>:wq
     sauvegarde puis quitte (write and quit)</li>
     <li>ZZ
     sauvegarde si nécessaire puis quitte</li>
     <li>:q
     quitte vi sans sauvegarder les modifications (quit)</li>
-    
+
     <li>:e!
     ignore les modifications et recharge le fichier (le point d'exclamation marque l'impératif)</li>
-    
+
     <li>:q!
     quitte immédiatement, sans rien faire d'autre (donc sans sauvergarder ni demande de confirmation)</li>
     <li>:w nom_de_fichier
     sauvegarde le fichier sous le nom nom_de_fichier	</li>
     <li>:w! nom_de_fichier
     remplace le contenu du fichier nom_de_fichier</li>
-       
+</ul>
                <!-- 2eme paragraphe -->
-              
+
        <h2>Déplacer le curseur</h2>
-          
+<ul>
            <li>H
     en haut de l'écran</li>
            <li>M
@@ -98,29 +98,29 @@
     recule jusqu'à la phrase suivante</li>
            <li>)
     avance jusqu'à la phrase précédente</li>
-    
+
                              <!-- 3eme paragraphe -->
-                             
-                             
+
+
 
                           <h2>Se déplacer dans le document édité</h2>
-                      
-                      
+
+<ul>
                            <li>[CTRL]f
     descend d'une page (forward, en avant)</li>
                            <li>[CTRL]b
-    remonte d'une page (back, en arrière)</li> 
+    remonte d'une page (back, en arrière)</li>
                            <li>[CTRL]d
     descend d'1/2 page</li>
                            <li>:X
     va à la ligne numérotée X (X est un entier)</li>
-                           
-                           
+
+</ul>
                             <!-- 3eme paragraphe -->
-                            
-                          <h2>Remplacer du texte</h2>              
-                                                    
-                             
+
+                          <h2>Remplacer du texte</h2>
+
+
                         <li>rx
     remplace le caractère à la position du curseur par x (x remplace ici n'importe quel caractère)	</li>
                         <li>R
@@ -131,33 +131,33 @@
     remplace uniquement le mot à la position du curseur (word, mot) ([ESC] pour terminer)</li>
 
                         <li>cnw
-    remplace n mots ([ESC] pour terminer)</li>                                                
-                        
+    remplace n mots ([ESC] pour terminer)</li>
+
                         <li>C
     remplace la ligne ([ESC] pour terminer)</li>
-                        
+
                                                     <!-- 4eme paragraphe -->
 
 
-                                           <h2>Supprimer du texte</h2> 
-                                            
-                                                                   
+                                           <h2>Supprimer du texte</h2>
+
+
                         <li>	x
     supprime un caractère (« faire une croix dessus »)</li>
                         <li>dw
-    supprime un mot (delete, détruire)</li>                        
+    supprime un mot (delete, détruire)</li>
                         <li>dnw
     supprime n mots</li>
                         <li>dd
     supprime une ligne</li>
                         <li>ndd
-    supprime n lignes</li>                     
-                        
+    supprime n lignes</li>
+
                                                <!-- 5eme paragraphe -->
-                        
+
                         <h2>Copier-coller</h2>
-                        
-                        
+
+
                         <li>Y
     copie une ligne, donc la place dans un tampon, pour pouvoir ensuite la coller (yank, tirer)</li>
                         <li>nY
@@ -166,60 +166,60 @@
     colle les lignes avant le curseur (paste, coller)</li>
                         <li>p
     colle les lignes après le curseur</li>
-                        
-                        
-                        
-                        
-                        
+
+
+
+
+
                                           <!-- 6eme paragraphe -->
-                        
+
                                   <h2>Annuler ou répéter des modifications</h2>
-                      
-                        
-                        
+
+
+
                                <li>u
     annule la dernière modification (undo, défaire)</li>
                                <li>U
     annule toutes les modifications effectuées sur la ligne courante</li>
                                <li>.
-    (un point) répète les dernières modifications</li>                        
-                               	
-                               	
-                                                    <!-- 7eme paragraphe -->                               	
-                               	
-                                   
-                                   
-                                   <h2>Copier-coller de texte dans un fichier</h2>                               	
-                               	
-                               	
-                               	
+    (un point) répète les dernières modifications</li>
+
+
+                                                    <!-- 7eme paragraphe -->
+
+
+
+                                   <h2>Copier-coller de texte dans un fichier</h2>
+
+
+
                               <li>ma
     marque la position "a" dans le fichier</li>
                               <li>ma
-    marque la position "a" dans le fichier</li> 	              
+    marque la position "a" dans le fichier</li>
                               <li>:'a,'b nom_de_fichier
-    copie dans le fichier nommé nom_de_fichier le texte situé entre la position "a" et la position "b"</li>               
-                              
-                              
-                              
-                              
+    copie dans le fichier nommé nom_de_fichier le texte situé entre la position "a" et la position "b"</li>
+
+
+
+
                               <!-- 8eme paragraphe -->
-                              
-                                     
-    
+
+
+
                                       <h2>Insertion du contenu d'un autre fichier</h2>
-                                              
-                                              
-                                              
+
+
+
                                               <li>:r nom_de_fichier
     insère tout le contenu du fichier nommé nom_de_fichier (read, lire)</li>
-                                                                                         
-                                             
 
-                                        
+
+
+
                                          <!-- 9eme paragraphe -->
-                                           
-                                           
+
+
                                            <h2>Rechercher et remplacer</h2>
 
 
@@ -247,23 +247,27 @@ N
 
                                         <h2>Rafraîchir l'affichage</h2>
 
-<p>C'était très utile avec les anciens terminaux et les liaisons réseau erratiques provoquant des problèmes d'affichage. Cela ne l'est guère plus.
+<p>C'était très utile avec les anciens terminaux et les liaisons réseau erratiques provoquant des problèmes d'affichage.<br> Cela ne l'est guère plus.
 
 [CTRL]l
     (control-L) rafraîchit l'affichage
-%[RET]
-    rafraîchit l'affichage et place le curseur en haut
-%
-    rafraîchit l'affichage et place le curseur au milieu
-%-
-    rafraîchit l'affichage et place le curseur en bas</p>
+rafraîchit l'affichage et place le curseur en haut
+rafraîchit l'affichage et place le curseur au milieu
+rafraîchit l'affichage et place le curseur en bas</p>
 
 
-    </body>
-    
-    
-    
-    
+
+
+
+                      </body>
+
+
+
+
+
+
+
+
 
 
 </html>
