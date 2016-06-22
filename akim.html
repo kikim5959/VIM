@@ -3,15 +3,17 @@
 <html>
 
 <head>
-    <link rel="stylesheet" href="style.css" />
-    <!-- En-tête de la page -->
+
+    <BODY BGCOLOR="#000000" TEXT="#00FF00" LINK="#00FFFF" VLINK="#00FFFF">
+        <link rel="stylesheet" href="style.css" />
+        <!-- En-tête de la page -->
 
 
-    <meta charset="utf-8" />
+        <meta charset="utf-8" />
 
-    <title>Bienvenue Je suis Vim 7</title>
+        <title>Bienvenue Je suis Vim 7</title>
 
-    <a href="https://fr.wikipedia.org/wiki/Vim">Wikipedia Vim</a>
+        <a href="https://fr.wikipedia.org/wiki/Vim">Wikipedia Vim</a>
 
 
 </head>
@@ -27,16 +29,27 @@
 
 
 
+    <h1 id="VIM">VIM</h1>
 
 
-    <h1>VIM</h1>
+    <ul>
+        <li><a href="#p1">Sauvegarde</a></li>
+        <li><a href="#p2">ce Ce deplacer avec le curseur</a></li>
+        <li><a href="#p3">Se déplacer dans le document édité</a></li>
+        <li><a href="#p4">Remplacer du texte</a></li>
+        <li><a href="#p5">Supprimer du texte</a></li>
+        <li><a href="#p6">Copier-coller</a></li>
+        <li><a href="#p7">Annuler ou répéter des modifications</a></li>
+        <li><a href="#p8">Copier-coller de texte dans un fichier</a></li>
+        <li><a href="#p9">Insertion du contenu d'un autre fichier</a></li>
+        <li><a href="#p10">Rechercher et remplacer</a></li>
+        <li><a href="#p11">Rafraîchir l'affichage</a></li>
+
+    </ul>
+    <!-- 1er PARAGRAPHE sauvgarde fichier -->
 
 
-
-    <!-- 1er paragraphe -->
-
-
-    <h2>Sauvegarder un fichier - quitter vi</h2>
+    <h2 id="p1">Sauvegarder un fichier - quitter vi</h2>
 
     <ul>
 
@@ -62,12 +75,14 @@
     <li>:w! nom_de_fichier
     remplace le contenu du fichier nom_de_fichier</li>
 </ul>
-               <!-- 2eme paragraphe -->
+               <!-- 2eme paragraphe ce deplacez -->
 
-       <h2>Déplacer le curseur</h2>
+               <h2 id="p2">Ce deplacer avec le curseur</h2>
+
 <ul>
-           <li>H
-    en haut de l'écran</li>
+
+        <li>H
+  en haut de l'écran</li>
            <li>M
     au milieu de l'écran</li>
            <li>L
@@ -98,12 +113,12 @@
     recule jusqu'à la phrase suivante</li>
            <li>)
     avance jusqu'à la phrase précédente</li>
+</ul>
+                             <!-- 3eme paragraphe Se déplacer dans le document édité-->
 
-                             <!-- 3eme paragraphe -->
 
 
-
-                          <h2>Se déplacer dans le document édité</h2>
+                          <h2 id="p3">Se déplacer dans le document édité</h2>
 
 <ul>
                            <li>[CTRL]f
@@ -118,9 +133,9 @@
 </ul>
                             <!-- 3eme paragraphe -->
 
-                          <h2>Remplacer du texte</h2>
+                          <h2 id="p4">Remplacer du texte</h2>
 
-
+<ul>
                         <li>rx
     remplace le caractère à la position du curseur par x (x remplace ici n'importe quel caractère)	</li>
                         <li>R
@@ -135,13 +150,13 @@
 
                         <li>C
     remplace la ligne ([ESC] pour terminer)</li>
-
+</ul>
                                                     <!-- 4eme paragraphe -->
 
 
-                                           <h2>Supprimer du texte</h2>
+                                           <h2 id="p5">Supprimer du texte</h2>
 
-
+<ul>
                         <li>	x
     supprime un caractère (« faire une croix dessus »)</li>
                         <li>dw
@@ -154,10 +169,10 @@
     supprime n lignes</li>
 
                                                <!-- 5eme paragraphe -->
+</ul>
+                        <h2 id="p6">Copier-coller</h2>
 
-                        <h2>Copier-coller</h2>
-
-
+<ul>
                         <li>Y
     copie une ligne, donc la place dans un tampon, pour pouvoir ensuite la coller (yank, tirer)</li>
                         <li>nY
@@ -170,12 +185,12 @@
 
 
 
-
+</ul>
                                           <!-- 6eme paragraphe -->
 
-                                  <h2>Annuler ou répéter des modifications</h2>
+                                  <h2 id="p7">Annuler ou répéter des modifications</h2>
 
-
+<ul>
 
                                <li>u
     annule la dernière modification (undo, défaire)</li>
@@ -183,23 +198,23 @@
     annule toutes les modifications effectuées sur la ligne courante</li>
                                <li>.
     (un point) répète les dernières modifications</li>
-
+</ul>
 
                                                     <!-- 7eme paragraphe -->
 
 
 
-                                   <h2>Copier-coller de texte dans un fichier</h2>
+                                   <h2 id="p8">Copier-coller de texte dans un fichier</h2>
 
 
-
+<ul>
                               <li>ma
     marque la position "a" dans le fichier</li>
                               <li>ma
     marque la position "a" dans le fichier</li>
                               <li>:'a,'b nom_de_fichier
     copie dans le fichier nommé nom_de_fichier le texte situé entre la position "a" et la position "b"</li>
-
+</ul>
 
 
 
@@ -207,20 +222,20 @@
 
 
 
-                                      <h2>Insertion du contenu d'un autre fichier</h2>
+                                      <h2 id="p9">Insertion du contenu d'un autre fichier</h2>
 
 
-
+<ul>
                                               <li>:r nom_de_fichier
     insère tout le contenu du fichier nommé nom_de_fichier (read, lire)</li>
 
 
-
+</ul>
 
                                          <!-- 9eme paragraphe -->
 
 
-                                           <h2>Rechercher et remplacer</h2>
+                                           <h2 id="p10">Rechercher et remplacer</h2>
 
 
 <p>/motif
@@ -245,7 +260,7 @@ N
                                        <!-- 10eme paragraphe -->
 
 
-                                        <h2>Rafraîchir l'affichage</h2>
+                                        <h2 id="p11">Rafraîchir l'affichage</h2>
 
 <p>C'était très utile avec les anciens terminaux et les liaisons réseau erratiques provoquant des problèmes d'affichage.<br> Cela ne l'est guère plus.
 
@@ -267,7 +282,10 @@ rafraîchit l'affichage et place le curseur en bas</p>
 
 
 
+  <a href="#VIM">Haut de page</a>
 
+
+  <p>&copyAkimm_-</p>
 
 
 </html>
