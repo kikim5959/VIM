@@ -4,7 +4,7 @@
 
 <head>
 
-    <BODY BGCOLOR="#000000" TEXT="#00FF00" LINK="#00FFFF" VLINK="#00FFFF">
+    <BODY BGCOLOR="#000000" TEXT="#000000" LINK="#000000" VLINK="#2F4F4F">
         <link rel="stylesheet" href="style.css" />
         <!-- En-tête de la page -->
 
@@ -13,7 +13,7 @@
 
         <title>Bienvenue Je suis Vim 7</title>
 
-        <a href="https://fr.wikipedia.org/wiki/Vim">Wikipedia Vim</a>
+
 
 
 </head>
@@ -31,8 +31,9 @@
 
     <h1 id="VIM">VIM</h1>
 
+<img src="image.png">
 
-    <ul>
+    <ul class="tableau">
         <li><a href="#p1">Sauvegarde</a></li>
         <li><a href="#p2">ce Ce deplacer avec le curseur</a></li>
         <li><a href="#p3">Se déplacer dans le document édité</a></li>
@@ -86,7 +87,7 @@
            <li>M
     au milieu de l'écran</li>
            <li>L
-    en bas de l'écran (lower, au plus bas)</li>
+    en bas de l'écran (lower = au plus bas)</li>
            <li>h
     décale d'un caractère à gauche</li>
            <li>j
@@ -100,11 +101,11 @@
            <li>$
     à la fin de la ligne ('$', dans un motif de regexp, désigne la fin d'une ligne)</li>
            <li>w
-    au début du mot suivant (word, mot)</li>
+    au début du mot suivant (word = mot)</li>
            <li>e
-    à la fin du mot suivant (end, fin)</li>
+    à la fin du mot suivant (end = fin)</li>
            <li>b
-    recule d'un mot (back, retour)</li>
+    recule d'un mot (back = retour)</li>
            <li>{
     recule jusqu'au paragraphe suivant</li>
            <li>}
@@ -122,9 +123,9 @@
 
 <ul>
                            <li>[CTRL]f
-    descend d'une page (forward, en avant)</li>
+    descend d'une page (forward = en avant)</li>
                            <li>[CTRL]b
-    remonte d'une page (back, en arrière)</li>
+    remonte d'une page (back = en arrière)</li>
                            <li>[CTRL]d
     descend d'1/2 page</li>
                            <li>:X
@@ -238,7 +239,8 @@
                                            <h2 id="p10">Rechercher et remplacer</h2>
 
 
-<p>/motif
+<ul>
+  <li>
     recherche motif en allant vers la fin du document
 ?motif
     recherche motif en allant vers le début du document
@@ -254,22 +256,23 @@ N
     recherche dans tous les fichiers le motif et la remplace par motif2 (global)
 :g/motif/s//motif2/gc
     idem, mais demande une confirmation avant de remplacer
-</p>
+  </li>
+</ul>
 
 
                                        <!-- 10eme paragraphe -->
 
 
                                         <h2 id="p11">Rafraîchir l'affichage</h2>
-
-<p>C'était très utile avec les anciens terminaux et les liaisons réseau erratiques provoquant des problèmes d'affichage.<br> Cela ne l'est guère plus.
+<ul>
+<li>C'était très utile avec les anciens terminaux et les liaisons réseau erratiques provoquant des problèmes d'affichage.<br> Cela ne l'est guère plus.
 
 [CTRL]l
     (control-L) rafraîchit l'affichage
 rafraîchit l'affichage et place le curseur en haut
 rafraîchit l'affichage et place le curseur au milieu
-rafraîchit l'affichage et place le curseur en bas</p>
-
+rafraîchit l'affichage et place le curseur en bas</li>
+</ul>
 
 
 
@@ -285,7 +288,10 @@ rafraîchit l'affichage et place le curseur en bas</p>
   <a href="#VIM">Haut de page</a>
 
 
+
+
   <p>&copyAkimm_-</p>
+
 
 
 </html>
